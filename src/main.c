@@ -147,7 +147,7 @@ void update_time(struct tm *tick_time) {
 	layer_mark_dirty(layer_ring);
 }
 void update_date(struct tm *tick_time) {
-	strftime(buffer_layer_date, sizeof("00/00/0000"), "%d/%m/%Y", tick_time);
+	strftime(buffer_layer_date, sizeof("00/00/0000"), "%m/%d/%Y", tick_time);
 	text_layer_set_text(s_layer_date, buffer_layer_date);
 }
 
@@ -303,7 +303,7 @@ static void init() {
 		
 	// Set custom fonts.
 	s_font_date = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_REGULAR_16));
-	s_font_time = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_REGULAR_38));
+	s_font_time = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_ROBOTO_REGULAR_40));
 	
 	// Create main Window element and assign to pointer
 	s_window_main = window_create();

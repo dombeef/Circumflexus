@@ -20,8 +20,8 @@
         "media": [
             {
                 "characterRegex": "[0-9a-zA-Z/:]",
-                "file": "fonts/Roboto-Regular.ttf",
-                "name": "FONT_ROBOTO_REGULAR_38",
+                "file": "fonts/Roboto-Regulard.ttf",
+                "name": "FONT_ROBOTO_REGULAR_40",
                 "type": "font"
             },
             {
